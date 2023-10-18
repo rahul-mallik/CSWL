@@ -1,0 +1,24 @@
+body{
+ background-color:#0a0a23;
+}
+
+th{
+ border: 1px solid white;
+}
+img{
+ height:100px;
+}
+
+table{
+ background-color: silver;
+ font-family:Arial;
+ color: #0a0a23;
+}
+
+#inner-page{
+ backgorund-color:white;
+ margin: 50px;
+ margin-top:0px;
+ padding-bottom: 90vh;
+ border: 5px solid white;
+}
