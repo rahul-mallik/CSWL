@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <style>
+  body{font-family: Arial;}
+  input[type=text],input[type=email], select {
+   width: 100%;
+   padding: 10px 16px;
+   margin: 6px 0;
+   display: inline-block;
+   border: 3px solid blue;
+   border-radius: 5px;
+   box-sizing: border-box;
+  }
+  input[type=submit] {
+   width: 100%;
+   background-color: orange;
+   color: brown;
+   padding: 12px 16px;
+   margin: 6px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+  }
+ input[type=submit]:hover {
+  color:white;
+  background-color: #00002c;
+ }
+ div {
+  border-radius: 3px;
+  background-image: url("https://img.lovepik.com/element/45010/6707.png_860.png");
+  background-size: contain;
+  padding: 15px;
+ }
+ </style>
+<body>
+ <h3>HTML	Forms	always	need	CSS	for	styling.</h3>
+ <div>
+  <form	action="/action_page.php">
+   <label for="std">Student Name</label>
+   <input type="text" id="std" name="student name" placeholder="Your name..">
+   <label for="branch">Branch</label>
+   <input type="text" id="dept" name="department" placeholder="Your department..">     
+   <label for="em">Email ID</label>
+   <input type="email" id="em" name="student name" placeholder="Your email id..">
+   <label for="city">City</label>
+   <select id="city" name="city">
+    <option value="Options">Choose an option</option>
+    <option value="Houston">Houston</option>
+    <option value="Tampa">Tampa</option>
+    <option value="San Francisco">San Francisco</option>
+   </select>
+   <input type="submit" value="Confirm">
+  </form>
+ </div>
+ </body>
+ </html>
