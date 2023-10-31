@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 8</title>
+    <style>
+        .form-container{
+            padding: 20px;
+            background-color: rgb(199, 230, 219);
+            border: 1px solid rgb(199, 230, 219);
+            border-radius: 5px;
+            font-family: Arial;
+        }
+
+        .form-group{
+            padding: 10px;
+        }
+
+        label{
+            color: purple;
+        }
+
+        input{
+            background-color: bisque;
+            border: 2px solid rgb(255, 196, 0);
+            border-radius: 5px;
+            font-family:Verdana;
+            font-size: 12px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        select {
+            border: 2px solid rgb(255, 196, 0);
+            background-color: bisque;
+            border-radius: 5px;
+            font-family:Verdana;
+            font-size: 12px;
+        }
+        input[type="submit"]:hover {
+            color:#007BFF;
+            background-color: #abcbf0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="Name">Name:<br></label>
+                <input type="text" name="name" id="name" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:<br></label>
+                <input type="email" name="email" id="email" placeholder="Your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:<br></label>
+                <input type="number" name="phone" id="phone" placeholder="Your Phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:<br></label>
+                <select id="subject" name="subject">
+                  <option value="general">Choose an option</option>
+                  <option value="support">CSW</option>
+                  <option value="feedback">AD</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+        </form>
+    </div>
+    
+</body>
+</html>
