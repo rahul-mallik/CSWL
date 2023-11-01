@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <title>Question 10</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans';
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            
+        }
+        .form-container{
+            background-color: #d3d3d3;
+            height: 500px;
+            width: 40%;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        h3{
+            text-align: center;
+
+        }
+
+        #user-name{
+            padding-right: 10px;
+        }
+        #passwrd{
+            padding-right: 15px;
+        }
+
+        #emaill{
+            padding-right: 47px;
+        }
+
+        #mobile-no{
+            padding-right: 37px;
+        }
+        #gender{
+            padding-right: 29px;
+        }
+        #city{
+            padding-right: 60px;
+        }
+
+        select{
+            padding: 5px;
+            border: 2px solid blue;
+            border-radius: 5px;
+            width: 180px;
+        }
+        .form-group{
+            padding: 10px;
+        }
+
+        button{
+            padding: 10px;
+            width: 100%;
+            background-color: #ffa07a;
+            border: 0px ;
+            border-radius: 5px;
+            font-size: large;
+            color: #d06350;
+        }
+
+        button:hover{
+            color: #fdf8f5;
+            background-color: #e28878;
+        }
+
+        input{
+            padding: 5px;
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <img src="https://www.nuaodisha.com/images/Contents/NuaOdisha-127142-SOA-University.png" alt=" logo">
+        <h3>Registration</h3>
+        <form>
+            <div class="form-group">
+                <label for="user-name" id="user-name">UserName</label>
+                <input type="text" name="user-name"  placeholder="Enter name...">
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="emaill">Email</label>
+                <input type="email" name="email"  placeholder="Enter email...">
+            </div>
+
+            <div class="form-group">
+                <label for="mobile-no" id="mobile-no">Mobile</label>
+                <input type="number" name="mobile-no"  placeholder="Enter MobileNo...">
+            </div>
+
+            <div class="form-group">
+                <label for="gender" id="gender">Gender</label>
+                <input type="radio" name="gender"  value="male"><span>Male</span>
+                <input type="radio" name="gender" value="female"><span>Female</span>
+            </div>
+
+            <div class="form-group">
+                <label for="city" id="city"> City</label>
+                <select>
+                    <option value="v1">Select City:</option>
+                    <option value="v1">Bhubaneshwar</option>
+                    <option value="v1">Cuttak</option>
+                    <option value="v1">Bokaro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="passwrd" id="passwrd">Password</label>
+                <input type="password" name="passwrd" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+            </div>
+
+            <div class="form-group">
+                <button>Sign Up</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

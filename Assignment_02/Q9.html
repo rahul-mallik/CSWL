@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Question 9</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .img-container {
+            height: 300px;
+            width: 100%;
+            background-image: url(https://thumbs.dreamstime.com/b/famoso-taj-mahal-panorama-front-view-agra-india-vista-frontale-172012461.jpg);
+            background-repeat: repeat-x;
+        }
+
+        .navigation {
+            background-color: #131212;
+            position: sticky;
+            top: 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Lucida Sans';
+            font-weight: 100;
+            padding: 5px;
+            color: aliceblue;
+        }
+
+        a:hover {
+            font-weight: 500;
+            color: #fff4cc;
+        }
+
+        th:hover {
+            background-color: #3b3a3a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+
+        th {
+            padding: 10px;
+            border: 1px #dcdcdc solid;
+        }
+
+        .content-body {
+            background-color: #dcdcdc;
+            height: 4000px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="img-container"></div>
+    <div class="navigation">
+        <table>
+            <tr>
+                <th><a href="#">HOME</a></th>
+                <th><a href="#">SERVICES</a></th>
+                <th><a href="#">GALLERY</a></th>
+                <th><a href="#">ABOUT US</a></th>
+            </tr>
+        </table>
+    </div>
+    <div class="content-body"></div>
+
 </body>
+
 </html>
