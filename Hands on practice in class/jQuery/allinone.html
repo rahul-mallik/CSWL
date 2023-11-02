@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</script>
+ <script>
+ $(document).ready(function(){
+ $(".hd").click(function(){
+ $("#1").hide();
+ });
+
+ $(".sh").click(function(){
+ $("#1").show();
+ });
+
+ $(".f-in").click(function(){
+ $("#1").fadeIn(500);
+ });
+
+ $(".f-out").click(function(){
+ $("#1").fadeOut(500);
+ });
+
+ $(".tog").click(function(){
+ $("#1").toggle(500);
+ });
+ });
+ </script>
+</head>
+<body>
+ <button class="sh">show</button>
+ <button class="hd">hide</button>
+ <button class="f-in">Fade In</button>
+ <button class="f-out">Fade Out</button>
+ <button class="tog">Toggle</button>
+ <button class="f-tog">Fade toggle</button>
+ <button class="f-to">Fade To</button>
+ <button class="s-down">Slide Down</button>
+ <button class="s-up">Slide Up</button>
+ <button class="s-tog">Slide Toggle</button>
+
+<div id="1" style="width:40px;height:60px;display:none;background-color:yellow;"><br></div>
+
+</body>
+</html>
