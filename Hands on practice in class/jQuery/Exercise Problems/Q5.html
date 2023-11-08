@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Elements by ID</title>
+</head>
+<body>
+  <input type="text" id="elementId" placeholder="Enter Element ID">
+  <button onclick="removeElement()">Remove Element</button>
+
+  <div id="element1">Element 1</div>
+  <div id="element2">Element 2</div>
+  <div id="element3">Element 3</div>
+
+  <script>
+    function removeElement() {
+      const idToRemove = document.getElementById('elementId').value;
+      const elementToRemove = document.getElementById(idToRemove);
+
+      if (elementToRemove) {
+        elementToRemove.remove();
+      } else {
+        alert('Element not found with the given ID.');
+      }
+    }
+  </script>
+</body>
+</html>

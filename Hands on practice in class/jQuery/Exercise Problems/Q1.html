@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("table").append("<tr><td>Utaksrh</td><td>16</td><td>A</td></tr>");
+            });
+        });
+    </script>
+    <title>Exercise Question 1</title>
+    <style>
+        table,td,th{
+            border: 1px solid pink;
+            padding: 10px;
+        }
+
+        button{
+            background-color: rgb(210, 243, 252);
+            border-radius: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Section</th>
+            <th>Grades</th>
+        </tr>
+        <tr>
+            <td>Raool</td>
+            <td>16</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Chiron</td>
+            <td>16</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Aditya</td>
+            <td>16</td>
+            <td>A</td>
+        </tr>
+    </table>
+    <button id="btn">Add a row in the table</button>
+    
+</body>
+</html>
