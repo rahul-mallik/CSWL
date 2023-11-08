@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.7.1.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                alert("Text: " + $("#par").text());
+            });
+            $("#b2").click(function () {
+                alert("HTML: " + $("#par").html());
+            });
+            $("#button1").click(function () {
+                alert("Value: " + $("#txt").val());
+            });
+            $(".but").click(function () {
+                alert($("#go").attr("href"));
+            });
+            $("#but1").click(function () {
+                $("#par1").text("Hi User!");
+            });
+            $("#but2").click(function () {
+                $("#par2").html("<b>Hi User!</b>");
+            });
+            $("#but3").click(function () {
+                $("#par3").val("Shane");
+            });
+
+            $("#b3").click(function () {
+                $(".app").append(" <b>New Content</b>.");
+                $(".app").prepend(" <b>New Content</b>.");
+            });
+            $("#b4").click(function () {
+                $("ul").append("<li>Soup</li>");
+            });
+$("#b5").click(function () {
+                $("#dd").remove();
+            });
+        });
+    </script>
+    <title>lol</title>
+    <style>
+        body,
+        button,input {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(248, 237, 255);
+        }
+
+        button,
+        input {
+            padding: 5px 20px;
+            border: 1px solid rgb(178, 234, 234);
+            border-radius: 20px;
+            background-color: aliceblue;
+            transition: 300ms;
+            color: rgb(22, 107, 218);
+        }
+
+        button:hover {
+            background-color: rgb(22, 107, 218);
+            color: aliceblue;
+            border: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="par">This is line is part of a paragraph <b>and contains bold text.</b> </p>
+    <button id="b1">Display Text</button>
+    <button id="b2">Display HTML code</button>
+    <br>
+    <p>Username: <input type="text" id="txt" placeholder="name"></p>
+    <button id="button1">Check the Value</button>
+
+    <p><a href="https://www.google.com" id="go">Google.com</a></p>
+    <button class="but">Show href Value</button>
+    <p id="par1">This is our first paragraph.</p>
+    <p id="par2">This is our second paragraph.</p>
+    <p>Input field: <input type="text" id="par3" value="Rick"></p>
+    <button id="but1">Setting any textual information</button>
+    <button id="but2">Setting any HTML data</button>
+    <button id="but3">Setting any value</button>
+
+    <p class="app">This is the first paragraph.</p>
+    <p class="app">This is the second paragraph.</p>
+<div id="dd">
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ul>
+</div>
+    <button id="b3">Append content at the end of paragraph.</button>
+    <button id="b4">Append item at the end of the list.</button>
+
+    <button id="b5">Remove the unordered list.</button>
+</body>
+
+</html>

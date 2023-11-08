@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("button").click(function () {
+				$(".info").toggle(200);
+			});
+$(".rmv").click(function () {
+				$("table").hide(200);
+			});
+		});
+	</script>
+	<title>css</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			font-size: 20px;
+		}
+
+		body {
+			background-color: pink;
+		}
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100px;
+
+		}
+
+		.lol {
+			width:200px;
+			position: fixed;
+			top: 10px;
+			left: 0;
+			border-radius:50%;
+		}
+
+		h3 {
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.obj3 {
+			width: 100%;
+		}
+
+		.obj4 {
+			width: 100%;
+			border: 1px solid red;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		table,
+		th,
+		td,
+		tr {
+			border: 1px solid black;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="obj2">
+		<h3>rahul mallik<br>B.Tech CSE</h3>
+	</div>
+
+	<div class="obj1">
+		<img
+			src="https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png">
+		<h3><a href="#">ITER — SOA | SIKSHA 'O' ANUSANDHAN</a></h3>
+	</div>
+
+	<div class="obj3">
+		<img class="lol" src="https://i.pinimg.com/originals/ba/92/7f/ba927ff34cd961ce2c184d47e8ead9f6.jpg">
+	</div>
+
+	<div class="obj4">
+		<p><i>"When you have a dream, you've got to grab it and never let go."</i>
+			— <b>Carol Burnett</b></p>
+	</div>
+
+	<div class="obj5">
+		<table>
+			<tr>
+				<th colspan="3">Eduactional Background</th>
+			</tr>
+			<tr>
+				<th>Univesity/School/College</th>
+				<th>Marks Percentage</th>
+				<th>Division</th>
+			</tr>
+			<tr>
+				<td>Holy Cross School(10<sup>th</sup>)</td>
+				<td>91%</td>
+				<td>1<sup>st</sup></td>
+			</tr>
+			<tr>
+				<td>Holy Cross School(12<sup>th</sup>)</td>
+				<td>89%</td>
+				<td>1<sup>st</sup></td>
+			</tr>
+			<tr>
+				<td rowspan="2">ITER — SOA</td>
+				<td>9.39 S.G.P.A (1<sup>st</sup> SEM)</td>
+				<td>1<sup>st</sup></td>
+			</tr>
+			<tr>
+				<td>9.39 S.G.P.A (2<sup>nd</sup> SEM)</td>
+				<td>1<sup>st</sup></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="obj7">
+		<table>
+			<tr>
+				<th><a href="#">LinkedIn</a></th>
+				<th><a href="#">Github</a></th>
+				<th><a href="#">Discord</a></th>
+				<th><a href="#">Reddit</a></th>
+			</tr>
+		</table>
+	</div>
+
+	<div class="obj6">
+<button class="rmv">remove</button>
+
+		<button class="btn">Contact Info</button>
+		<div class="info" style="display:none;> 
+		<p>Mail ID: mallikrahul900@gmail.com<br></p> 
+		<p>Github:<a href=" https://github.com/rahul-mallik">
+			<p>Mail ID: mallikrahul900@gmail.com<br></p>
+			<p>Github:<a href="https://github.com/rahul-mallik">Go to site</a><br></p>
+			<p>Phone NO.: 0000xxxx00</p>
+		</div>
+
+</body>
+
+</html>
