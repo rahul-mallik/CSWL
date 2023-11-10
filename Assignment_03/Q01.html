@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Count Child Elements</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            var numberOfPElements = $("#selected p").length;
+            $("#selected").append("<p>Number of p elements: " + numberOfPElements + "</p>");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="selected">
+        <p>Red</p>
+        <p>White</p>
+        <p>Green</p>
+        <p>Black</p>
+        <p>Blue</p>
+        <p>Orange</p>
+    </div>
+</body>
+</html>

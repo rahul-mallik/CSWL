@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Click and Double Click</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".p1").click(function () {
+                alert("You single-clicked the paragraph.");
+            });
+            $(".p2").dblclick(function () {
+                alert("You double-clicked the paragraph.");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <p class="p1">Single Click me!</p>
+    <p class="p2">Double Click me!</p>
+</body>
+
+</html>
