@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Page</title>
+    <script src="jquery.js"></script>
+    <style>
+        #box {
+            width: 200px;
+            height: 20px;
+            background-color: red;
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#txt").mouseenter(function () {
+                $("#box").slideDown();
+            });
+            $("#animate").click(function () {
+                $("h1").animate({ fontSize: "20px" }, "slow");
+            });
+            $("#fadein").click(function () {
+                $("#box").fadeIn();
+            });
+            $("#hide").click(function () {
+                $("#box").hide();
+            });
+            $("#show").click(function () {
+                $("#box").show();
+            });
+            $("#box2").dblclick(function () {
+                $(this).fadeOut();
+            });
+            $("#box3").mouseenter(function () {
+                $(this).css("background-color", "yellow");
+            });
+            $("#box4").mouseleave(function () {
+                $(this).css("background-color", "red");
+            });
+            $("#attr").click(function () {
+                $("#image").attr("src", "https://www.w3schools.com/images/w3schools_red.jpg");
+            });
+            $("#html").click(function () {
+                $("#text").html("This is <b>new</b> text.");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Example Page</h1>
+    <p id="txt">Hover over the box to see the slideDown() method in action:</p>
+    <div id="box"></div>
+    <p>Click the button to see the animate() method in action:</p>
+    <button id="animate">Animate</button>
+    <p>Click the button to see the fadeIn() method in action:</p>
+    <button id="fadein">Fade In</button>
+    <p>Click the button to see the hide() method in action:</p>
+    <button id="hide">Hide</button>
+    <p>Click the button to see the show() method in action:</p>
+    <button id="show">Show</button>
+    <p>Double-click the box to see the dblclick() method in action:</p>
+    <div id="box2" style="width: 200px; height: 20px; background-color: blue;"></div>
+    <p>Hover over the box to see the mouseenter() method in action:</p>
+    <div id="box3" style="width: 200px; height: 20px; background-color: green;"></div>
+    <p>Hover over the box to see the mouseleave() method in action:</p>
+    <div id="box4" style="width: 200px; height: 20px; background-color: purple;"></div>
+    <p>Click the button to see the attr() method in action:</p>
+    <button id="attr">Change Image</button>
+    <img id="image" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+    <p>Click the button to see the html() method in action:</p>
+    <button id="html">Change Text</button>
+    <div id="text">This is some text.</div>
+</body>
+
+</html>

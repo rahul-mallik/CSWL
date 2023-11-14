@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery.js"></script>
+    <script>
+        var choices = ['rock', 'paper', 'scissors'];
+        var score = 0;
+
+        function play(userChoice) {
+            var computerChoice = choices[Math.floor(Math.random() * 3)];
+            document.getElementById('comp_choice').innerHTML = "Computer Choose: "+computerChoice;
+            if (userChoice === computerChoice) {
+                document.getElementById('result').innerHTML = "It's a draw!";
+            } else if (
+                (userChoice === 'rock' && computerChoice === 'scissors') ||
+                (userChoice === 'paper' && computerChoice === 'rock') ||
+                (userChoice === 'scissors' && computerChoice === 'paper')
+            ) {
+                score++;
+                document.getElementById('result').innerHTML = "You win! Score: " + score;
+            } else {
+                score--;
+                document.getElementById('result').innerHTML = "You lose! Score: " + score;
+            }
+        }
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .game {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+        .game div {
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <div id="rock" onclick="play('rock')">Rock</div>
+        <div id="paper" onclick="play('paper')">Paper</div>
+        <div id="scissors" onclick="play('scissors')">Scissors</div>
+    </div>
+    <div id="comp_choice"></div>
+    <div id="result"></div>
+
+    
+</body>
+</html>

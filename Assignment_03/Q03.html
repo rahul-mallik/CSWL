@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Alert msg</title>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                var error = document.getElementById("error");
+                $("button").click(function(){
+                    error.innerHTML = "<span style='color: red;'>This is an alert msg</span>"
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button>Press me</button><br>
+        <span id="error"></span>
+    </body>
+</html>
