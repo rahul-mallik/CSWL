@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("span").parent().css({ "color": "cyan", "border": "1px solid cyan" });
+      $(".sib").siblings().css({"color": "blue", "border": "3px solid brown"});
+      $(".head2,.head3").next().css({ "color": "magenta", "border": "3px solid magenta" });
+      $(".blabla").nextAll().css({ "color": "red", "border": "3px solid red" });
+      $(".head1").nextUntil(".head5").css({ "color": "pink", "border": "3px solid pink"});
+    });
+  </script>
+  <style>
+    .outermost * {
+      display: block;
+      border: 2px solid lightgrey;
+      color: green;
+      padding: 6px;
+      margin: 20px;
+    }
+
+    .s,
+    .s * {
+      display: block;
+      border: 3px solid green;
+      color: green;
+      padding: 6px;
+      margin: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outermost">
+    <div style="width:400px;">div (great-grandparent)
+      <ol>ol (grandparent)
+        <li>li (direct parent)
+          <span>span</span>
+        </li>
+      </ol>
+    </div>
+    <div style="width:400px;">div (grandparent)
+      <p>p (direct parent)
+        <span>span</span>
+      </p>
+    </div>
+  </div>
+<div class="s">div (parent)
+ <p>p</p>
+ <h1>span</h1>
+ <h2 class="sib">h2</h2>
+ <h3>h3</h3>
+ <p>p</p>
+</div>
+
+  <div class="s">div (parent)
+    <p>p</p>
+    <h1>span</h1>
+    <h2 class="head2">h2</h2>
+    <h3 class="head3">h3</h3>
+    <p>p</p>
+  </div>
+
+  <div class="s">div (parent)
+    <p>p1</p>
+    <p>p2</p>
+    <h1>span</h1>
+    <h2 class="blabla">h2</h2>
+    <h3>h3</h3>
+    <h1>span</h1>
+    <p>p3</p>
+  </div>
+
+  <div class="s">div (parent)
+    <p>p</p>
+    <p>span</p>
+    <h1 class="head1">h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5 class="head5">h5</h5>
+    <h6>h6</h6>
+    <h6>h7</h6>
+  </div>
+</body>
+
+</html>
