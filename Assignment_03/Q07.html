@@ -6,8 +6,8 @@
     <script src="jquery.js"></script>
     <script>
         $(document).ready(function () {
-            var name = document.forms["myForm"]["name"].value;
-            var email = document.forms["myForm"]["email"].value;
+            var name = this.forms["myForm"]["name"].value;
+            var email = this.forms["myForm"]["email"].value;
 
             if (name == null || name == "") {
                 alert("Name must be filled out");
