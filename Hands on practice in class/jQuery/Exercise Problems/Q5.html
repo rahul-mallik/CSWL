@@ -1,27 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Remove Elements by ID</title>
-</head>
-<body>
-  <input type="text" id="elementId" placeholder="Enter Element ID">
-  <button onclick="removeElement()">Remove Element</button>
+class Node {
+  int data;
+  Node next;
 
-  <div id="element1">Element 1</div>
-  <div id="element2">Element 2</div>
-  <div id="element3">Element 3</div>
+  public Node(int data) {
+      this.data = data;
+      this.next = null;
+  }
+}
 
-  <script>
-    function removeElement() {
-      const idToRemove = document.getElementById('elementId').value;
-      const elementToRemove = document.getElementById(idToRemove);
+class LinkedList {
+  Node head;
 
-      if (elementToRemove) {
-        elementToRemove.remove();
-      } else {
-        alert('Element not found with the given ID.');
+  public void insertFirst(int data) {
+      Node newNode = new Node(data);
+      newNode.next = head;
+      head = newNode;
+  }
+
+  public void display() {
+      Node current = head;
+      while (current != null) {
+          System.out.print(current.data + " ");
+          current = current.next;
       }
-    }
-  </script>
-</body>
-</html>
+      System.out.println();
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+      LinkedList linkedList = new LinkedList();
+
+      // Insert elements at the beginning of the linked list
+      linkedList.insertFirst(3);
+      linkedList.insertFirst(2);
+      linkedList.insertFirst(1);
+
+      // Display the linked list
+      System.out.println("Linked List after inserting elements at the beginning:");
+      linkedList.display();
+  }
+}
+
