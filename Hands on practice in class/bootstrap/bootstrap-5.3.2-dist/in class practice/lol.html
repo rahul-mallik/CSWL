@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Dropdown Menus</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.
+js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<h2>Dropdown Menus</h2>
+		<p>To create a dropdown menu add one button group inside another:</p>
+		<div class="btn-group btn-group-lg">
+			<button type="button" class="btn btn-primary">Cybersecurity</button>
+			<button type="button" class="btn btn-primary">Mobile App Development</button>
+			<div class="btn-group btn-group-lg">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Website
+					Development</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HTML</a>
+					<a class="dropdown-item" href="#">CSS</a>
+					<a class="dropdown-item" href="#">Bootstrap</a>
+				</div>
+			</div>
+
+			<div class="btn-group btn-group-lg">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Hello
+					World</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HI</a>
+					<a class="dropdown-item" href="#">IDK</a>
+					<a class="dropdown-item" href="#">OK</a>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="btn-group-vertical btn-group-lg">
+			<button type="button" class="btn btn-primary">Hello</button>
+			<div class="btn-group btn-group-lg">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">World</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">HI</a>
+					<a class="dropdown-item" href="#">IDK</a>
+					<a class="dropdown-item" href="#">OK</a>
+				</div>
+			</div>
+			<div class="btn-group btn-group-lg">
+				<button type="button" class="btn btn-outline-danger dropdown-toggle"
+					data-toggle="dropdown">Reset</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">OMG</a>
+					<a class="dropdown-item" href="#">CHIRU</a>
+					<a class="dropdown-item" href="#">RAOOL</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
