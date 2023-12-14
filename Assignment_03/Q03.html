@@ -1,18 +1,22 @@
 <html>
-    <head>
-        <title>Alert msg</title>
-        <script src="jquery.js"></script>
-        <script>
-            $(document).ready(function(){
-                var error = document.getElementById("error");
-                $("button").click(function(){
-                    error.innerHTML = "<span style='color: red;'>This is an alert msg</span>"
-                });
+
+<head>
+    <title>Lost focus</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#field1").blur(function () {
+                alert("The field has lost its focus.");
             });
-        </script>
-    </head>
-    <body>
-        <button>Press me</button><br>
-        <span id="error"></span>
-    </body>
+        });
+    </script>
+</head>
+
+<body>
+    <form>
+        <input id="field1" type="text" value="Field 1">
+        <input id="field2" type="text" value="Field 2">
+    </form>
+</body>
+
 </html>
